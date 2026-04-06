@@ -1,4 +1,4 @@
-Họ và tên: Dũng
+Họ và tên: Ngô Đức Dũng
 
 MSSV: 23810310264
 
