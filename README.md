@@ -43,26 +43,40 @@ Dự án thực hành xây dựng hệ thống quản trị nội dung sử dụ
 ## Hướng dẫn cài đặt
 
 **Bước 1: Clone dự án về máy**
+```bash
     git clone https://github.com/endydunxg/filament-admin-lab.git
     cd filament-admin-lab
+```
 **Bước 2: Cài đặt thư viện**
+```bash
     composer install
+```
 **Bước 3: Cấu hình môi trường**
 Copy file .env.example thành .env và thiết lập kết nối cơ sở dữ liệu.
+```bash
     cp .env.example .env
     php artisan key:generate
+```
 Cập nhật file .env với thông tin Database của bạn:
+```bash
     DB_CONNECTION=mysql
     DB_HOST=127.0.0.1
     DB_PORT=3306
     DB_DATABASE=filament_lab
     DB_USERNAME=root
     DB_PASSWORD=
+```
 **Bước 4: Chạy Migration**
+```bash
     php artisan migrate
+```
 **Bước 5: Tạo tài khoản Admin**
 Tạo tài khoản để đăng nhập vào trang quản trị:
+```bash
     php artisan make:filament-user
+```
 **Bước 6: Khởi chạy Server**
+```bash
     php artisan serve
+```
 Truy cập vào trang quản trị tại: http://127.0.0.1:8000/admin
